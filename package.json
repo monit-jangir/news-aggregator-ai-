@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "@types/node": "^22.13.14",
+    "newsapi": "^2.4.1",
     "typescript": "^5.8.2"
   }
 }
