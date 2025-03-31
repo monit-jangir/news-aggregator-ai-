@@ -1,0 +1,7 @@
+.idea
+.vscode
+.DS_Store
+
+/docs/typescript
+/docs/python
+/docs/README.md
