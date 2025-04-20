@@ -1,34 +1,38 @@
- 🤖 MONIT-AI: Your Personalized AI Assistant
+ 🐝 MONIT-AI: Enhanced BeeAI with News Aggregator Agent
 
-MONIT-AI is a smart, customizable AI assistant built using Python and LangChain. Designed to serve as a powerful tool for answering queries, logging interactions, and enabling personalized AI workflows, this project is ideal for developers and learners looking to explore agentic AI.
+MONIT-AI is a customized fork of the BeeAI framework — a modular, agent-based AI assistant platform. This version introduces a powerful **News Aggregator Agent** that fetches and summarizes the latest news articles in real-time, making the assistant even more informative and helpful.
 
-## 🚀 Features
+## 🚀 What's New?
 
-- ✅ LLM-powered conversational assistant
-- 📦 Integrated logging system using `LoggingAgent`
-- 🧠 Knowledge-based question answering with local memory
-- 🔗 Uses LangChain framework for modular and scalable AI pipelines
-- ✨ Simple CLI interface for local interaction
-- 🔍 Codebase ready for extension and integration with UI/voice input
+- 📰 **News Aggregator Agent**: 
+  - Retrieves current headlines using news APIs or web scraping
+  - Summarizes and categorizes news into topics
+  - Integrated into the existing BeeAI agent pipeline
 
-## 📁 Project Structure
+## 🔧 Built on BeeAI Framework
+
+BeeAI is a composable LangChain-based agent framework that supports:
+
+- Modular agent design (e.g., LoggingAgent, WebSearchAgent, and now NewsAgent)
+- Flexible memory and conversation history
+- CLI interface and extensible backend
+
+## 📁 Directory Structure
 
 ```
 MONIT-AI/
 ├── agents/
-│   └── LoggingAgent.py         # Custom LangChain agent for logging interactions
-├── logs/
-│   └── interaction_logs.txt    # Logs stored locally
-├── main.py                     # Main script to interact with MONIT-AI
+│   ├── LoggingAgent.py
+│   └── NewsAggregatorAgent.py    # 🆕 Newly added news agent
+├── main.py
 ├── prompts/
-│   └── system_prompt.txt       # Prompt templates for guiding the assistant
 ├── utils/
-│   └── helper_functions.py     # Supporting utility functions
-├── README.md                   # Project documentation
-└── requirements.txt            # Python dependencies
+├── logs/
+├── requirements.txt
+└── README.md
 ```
 
-## 🛠️ Installation
+## 🚀 Getting Started
 
 1. **Clone the Repository**
    ```bash
@@ -36,47 +40,38 @@ MONIT-AI/
    cd MONIT-AI
    ```
 
-2. **Create a Virtual Environment (Optional but Recommended)**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install Dependencies**
+2. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Run the Assistant**
+3. **Run the Assistant**
    ```bash
    python main.py
    ```
 
-## ⚙️ Requirements
+## 🌐 News Aggregator Usage
 
-- Python 3.8+
-- LangChain
-- OpenAI API key (if using OpenAI LLMs)
-- Additional dependencies in `requirements.txt`
+Once launched, you can ask questions like:
 
-## 🧠 Future Enhancements
+- *"Show me the latest tech news."*
+- *"What’s happening in world politics today?"*
+- *"Summarize today’s top headlines."*
 
-- ✅ Voice input/output integration
-- ✅ React.js frontend interface
-- ✅ Deployment on Render/Heroku
-- ✅ Web scraping module integration
-- ✅ Memory and contextual conversation improvements
+## 🔮 Future Plans
 
-## 🤝 Contribution
+- GUI-based interface
+- Voice commands
+- Caching of trending topics
+- Real-time news notifications
 
-Feel free to fork this repository, make enhancements, and create pull requests! This is an evolving project and contributions are always welcome.
+## 🤝 Contributing
 
-## 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Want to add more agents or improve the News Aggregator? Fork the repo, make changes, and submit a PR!
 
 ## 👤 Author
 
 **Monit Jangir**  
 📧 [monitjangir@gmail.com](mailto:monitjangir@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/monit-jangir/)
+
